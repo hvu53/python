@@ -1,0 +1,14 @@
+def shift_n_letters(aStr, n):
+    newStr = ''
+    for i in aStr:
+        if i in ' .()':
+            newStr += i
+        v = ord(i)
+        if v +n > 122:
+            new_v = 96 + (v+n -122)
+        elif v+n < 97:
+            new_v = 122 - (96 - (v+n))
+        elif v+n >= 97 and v+n <= 122:
+            new_v = v + n
+        newStr += chr(new_v)
+    return newStr

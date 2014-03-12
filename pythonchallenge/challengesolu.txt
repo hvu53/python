@@ -1,0 +1,3 @@
+solu0: 2*38 = ?
+solu1: ocr.html
+solu2: equality
